@@ -1,0 +1,30 @@
+.calc-badges {
+	background: $violet;
+	padding: 107rem 0 0 0;
+	&__calc-wrap {
+		position: relative;
+	}
+	&__calc {
+		position: relative;
+		z-index: 2;
+		min-height: 890rem;
+	}
+	&__img-calc {
+		position: absolute;
+		right: -275rem;
+		top: 190rem;
+		width: 502rem;
+		pointer-events: none;
+	}
+	&__discount {
+		color: #fff;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.calc-badges {
+		&__img-calc {
+			display: none;
+		}
+	}
+}

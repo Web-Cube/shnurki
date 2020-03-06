@@ -1,0 +1,154 @@
+
+.mfp-bg{
+	background-color: rgb(0, 0, 0);
+	opacity: 0.502;	
+}
+
+.mfp-wrap {
+	overflow-x: hidden;
+	overflow-y: auto !important;
+}
+
+.modals{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	background-color: #fff;
+	cursor: auto!important;	
+	font-size: 16rem;
+	border-radius: 20px;
+	&-form {
+		max-width: 912rem;
+		padding: 40rem 40rem 80rem 40rem;
+		text-align: center;
+		overflow: hidden;
+		&__logo {
+			width: 164rem;
+			margin: 0 auto 20rem auto;
+		}
+		&__desc {
+			font-size: 18rem;
+			font-weight: 500;
+			margin-bottom: 24rem;
+		}
+		&__form {
+			margin-top: 30rem;
+		}
+		&__label {
+			display: block;
+			margin-bottom: 22rem;
+			font-size: 22rem;
+			font-weight: 500;
+		}
+		&__input {
+			border: 1px solid #b7b7b7;
+			border-radius: 4px;
+			background: none;
+			width: 320rem;
+			height: 64rem;
+			font-size: 18rem;
+			font-family: 'Gilroy';
+			text-align: center;
+			color: #353535;
+			@include placeholder {
+				color: #353535;
+			}
+		}
+		&__field {
+			margin-bottom: 30rem;
+			&.error {
+				.modals-form__input {
+					border-color: crimson;
+					color: crimson;
+					@include placeholder {
+						color: crimson;
+					}
+				}
+			}
+		}
+		&__btn-wrap {
+			width: 320rem;
+			margin: auto;
+		}
+		&__btn {
+			width: 100%;
+		}
+		&__cube {
+			position: absolute;
+			bottom: -37rem;
+			width: 345rem;
+			height: 247rem;
+			background: url(/img/modals__cube.png) 0 0 no-repeat;
+			background-size: 100% auto;
+			&_left {
+				left: -113rem;
+			}
+			&_right {
+				right: -113rem;
+			}
+		}
+	}
+	&__close{
+		position: absolute;
+		right: 22rem;
+		top: 22rem;
+		width: 29rem;
+		height: 29rem;
+		fill: #cccccc;
+		cursor: pointer;
+	}
+}
+.mfp-bg{
+	opacity: 0;
+	transition: all .5s ease; 
+	
+
+
+	&.mfp-ready{
+		opacity: 0.502;	
+	}
+
+	&.mfp-removing{
+		opacity: 0;
+	}
+}
+
+.css-modal-animate{
+	// start state
+	
+	overflow: hidden;
+
+	.modals, .mfp-figure{
+		transition: all .5s ease; 
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	// animate in
+	&.mfp-ready{
+		.modals, .mfp-figure{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	// animate out
+	&.mfp-removing{	
+		.modals, .mfp-figure{
+			opacity: 0;
+		}
+	}
+
+}
+@include max-screen($large_mobile) {
+	.modals {
+		&-form {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 50px;
+			&__cube {
+				display: none;
+			}
+		}
+	}
+}

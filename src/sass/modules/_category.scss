@@ -1,0 +1,9 @@
+.category {
+	padding-top: 133rem;
+}
+
+@include max-screen($large_mobile) {
+	.category {
+		padding-top: 50px;
+	}
+}

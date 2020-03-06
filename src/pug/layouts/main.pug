@@ -1,0 +1,80 @@
++b.header._fixed
+	+e.wrap.wrap
+		+e.row.flex._justify._vertical
+			+e.A.logo(href="/main.html")
+				img(src="/img/logo.png")
+			+e.center.flex_vertical
+				+e.calc-btn.calc-btn__.js-modal(data-modal="#shnurok")
+					+e.icon
+						img(src="/img/calculator-icon.png")
+					+e.text
+						| Калькулятор 
+						br
+						| шнурки
+				+e.calc-btn.calc-btn__.js-modal(data-modal="#badges")
+					+e.icon
+						img(src="/img/calculator-icon.png")
+					+e.text
+						| Калькулятор 
+						br
+						| бейджи
+			+e.contact
+				+e.A.tel(href="tel:+74951662424") +7 495 166 24 24
+				+e.A.email(href="mailto:sales@promoshnurok.ru") sales@promoshnurok.ru
++b.main
+	+e.top-layer
+	+e.wrap.wrap
+		include header
+		+e.IMG.badges(src="/img/main__badges.png")
+		+e.IMG.badge-blur(src="/img/main__badge_blur.png")
+		+e.form-bg
+			+e.FORM.form(action="/app/mail")
+				+e.form-title.p
+					| Заказать обратный звонок
+				+e.INPUT.input(type="tel",name="phone",placeholder="+7 (___) ___-__-__")
+				+e.BUTTON.form-btn.btn._orange.btn__(type="submit",name="recall")
+					+e.icon-call
+						img(src="/img/icon-call.png")
+					+e.text Заказать звонок
+		+e.content
+			+e.desc Качество по разумной цене!
+			+e.H1.title.h1
+				| Шнурки от 18 руб./шт.
+				br
+				| бейджи от 7 руб./шт.
+			+e.desc
+				| С логотипом под заказ и со склада по ценам 
+				br
+				| от производителя в срок от 1 дня. 
+				br
+				| Производим от 1 штуки, бесплатно доставим 
+				br
+				| при заказе от 5 тыс. руб
+			+e.content-bottom
+				+e.A.btn.btn._violet.btn__.js-modal(href="#recall",data-subj="Запрос на макет")
+					+e.text запрос на макет
+				+e.IMG.arrow(src="/img/main__arrow.png")
+				+e.text-btn
+					| Бесплатный макет от дизайнера 
+					br
+					| за 30 минут на ваше изделие 
+					br
+					| по запросу
+		+e.calc-wrap
+			+e.IMG.img-calc(src="/img/main__calc.png")
+			+e.calc.calc.calc__
+		+e.discount.discount__
+			+e.cube1
+			+e.cube2
+			+e.wrap.align-center
+				+e.H2.title.h2
+					| Скидки предоставляются 
+					br
+					| от объема заказа!
+				+e.A.btn.btn._violet.btn__.js-modal(href="#recall")
+					+e.icon-calc
+						img(src="/img/calc-icon-white.png")
+					+e.text
+						| Рассчитать скидку 
+						br
+						| от объема

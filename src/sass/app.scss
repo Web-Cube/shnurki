@@ -1,0 +1,17 @@
+@mixin letter-spacing($x, $y) {
+	letter-spacing: toem(($x*$y)/1000,$x);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+$orange: #f26522;
+$violet: #4e0ea2;
+
+@import "mixins/**/*.scss";
+@import "defaults/**/*.scss";
+@import "modules/**/*.scss";

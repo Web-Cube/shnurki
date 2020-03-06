@@ -1,0 +1,20 @@
++b.modals-form.modals.mfp-hide#recall
+	+e.logo
+		img(src="/img/logo_orange.png")
+	+e.desc
+		| Качество по разумной цене!
+	+e.H3.title.h3
+		| ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА 
+		br
+		| И МЫ СВЯЖЕМСЯ С ВАМИ ЧЕРЕЗ 3 МИНУТЫ
+	+e.FORM.form(action="app/mail")
+		input(type="hidden",name="subj")
+		+e.LABEL.label Номер телефона
+		+e.field
+			+e.INPUT.input(type="tel",name="phone",placeholder="+7 (___) ___-__-__")
+		+e.btn-wrap.btn-wrap
+			+e.BUTTON.btn.btn._orange._fill(type="submit",name="send") отправить
+			.btn-wrap__arrow
+				img(src="/img/product__arrow.png")
+	+e.cube._left
+	+e.cube._right

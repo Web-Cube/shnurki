@@ -1,0 +1,19 @@
+.video-screen {
+	
+}
+
+@include max-screen($large_mobile) {
+	.video-screen {
+		&__slider {
+			background: none;
+			box-shadow: none;
+		}
+		.slider__item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.slider__arrow {
+			stroke: #fff;
+		}
+	}
+}

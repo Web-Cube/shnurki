@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Страница спасибо</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1582265300553">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="thanks">
+            <div class="thanks__wrap wrap">
+                <picture>
+                    <source type="image/webp" srcset="/app/img/thanks__left.webp">
+                        <img src="/app/img/thanks__left.png" class="thanks__img-left" alt="" role="presentation" />
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="/app/img/thanks__right.webp">
+                        <img src="/app/img/thanks__right.png" class="thanks__img-right" alt="" role="presentation" />
+                </picture>
+            </div>
+            <div class="thanks__top-layer"></div>
+            <div class="thanks__top">
+                <header class="header">
+                    <div class="header__wrap wrap">
+                        <div class="header__row flex flex_justify flex_vertical">
+                            <a class="header__logo" href="/main.html">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/logo.webp">
+                                        <img src="/app/img/logo.png" />
+                                </picture>
+                            </a>
+                            <div class="header__center flex flex_vertical">
+                                <div class="header__center-text">Качество по&nbsp;разумной цене!</div>
+                            </div>
+                            <div class="header__contact"><a class="header__tel" href="tel:+74951662424">+7 495 166 24 24</a><a class="header__email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="thanks__center">
+                <div class="thanks__wrap wrap">
+                    <h2 class="thanks__title h3">ВАША ЗАЯВКА ОТПРАВЛЕНА <br>БЛАГОДАРИМ ЗА ОКАЗАННОЕ ДОВЕРИЕ! <br>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ <br>В ТЕЧЕНИе 3-Х МИНУТ!</h2>
+                    <div class="thanks__btn-wrap btn-wrap"><a class="thanks__btn btn btn_violet btn" href="main.html"><span class="btn__line"></span><span class="btn__text">вернуться на&nbsp;главную</span></a>
+                        <div class="btn-wrap__arrow">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/main__arrow.webp">
+                                    <img src="/app/img/main__arrow.png" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thanks__bottom">
+                <footer class="footer">
+                    <div class="footer__wra wrap">
+                        <div class="footer__row flex flex_justify flex_vertical">
+                            <a class="footer__logo" href="main.html">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/logo.webp">
+                                        <img src="/app/img/logo.png" />
+                                </picture>
+                            </a>
+                            <div class="footer__nav flex"><a class="footer__link js-modal" href="#shnurok"> Калькулятор <br>шнурки</a><a class="footer__link js-scroll-to" href="#products"> Готовая <br>продукция</a><a class="footer__link js-modal" href="#badges"> Калькулятор <br>бейджи</a>
+                                <a
+                                class="footer__link js-scroll-to" href="#holder">Держатели
+                                    <br>для&nbsp;бейджей</a>
+                            </div>
+                            <div class="footer__contact"><a class="footer__tel" href="tel:+74951662424">+7 495 166 24 24</a><a class="footer__email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="modals-form modals mfp-hide" id="recall">
+            <div class="modals-form__logo">
+                <picture>
+                    <source type="image/webp" srcset="/app/img/logo_orange.webp">
+                        <img src="/app/img/logo_orange.png" />
+                </picture>
+            </div>
+            <div class="modals-form__desc">Качество по&nbsp;разумной цене!</div>
+            <h3 class="modals-form__title h3">ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА <br>И МЫ СВЯЖЕМСЯ С ВАМИ ЧЕРЕЗ 3 МИНУТЫ</h3>
+            <form class="modals-form__form" action="app/mail">
+                <input type="hidden" name="subj">
+                <label class="modals-form__label">Номер телефона</label>
+                <div class="modals-form__field">
+                    <input class="modals-form__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                </div>
+                <div class="modals-form__btn-wrap btn-wrap">
+                    <button class="modals-form__btn btn btn_orange btn_fill" type="submit" name="send">отправить</button>
+                    <div class="btn-wrap__arrow">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/product__arrow.webp">
+                                <img src="/app/img/product__arrow.png" />
+                        </picture>
+                    </div>
+                </div>
+            </form>
+            <div class="modals-form__cube modals-form__cube_left"></div>
+            <div class="modals-form__cube modals-form__cube_right"></div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1582265300561"></script>
+</body>
+
+</html>

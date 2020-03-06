@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1582265299927">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="header header_fixed">
+            <div class="header__wrap wrap">
+                <div class="header__row flex flex_justify flex_vertical">
+                    <a class="header__logo" href="/main.html">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/logo.webp">
+                                <img src="/app/img/logo.png" />
+                        </picture>
+                    </a>
+                    <div class="header__center flex flex_vertical">
+                        <div class="header__calc-btn calc-btn js-modal" data-modal="#shnurok">
+                            <div class="calc-btn__icon">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/calculator-icon.webp">
+                                        <img src="/app/img/calculator-icon.png" />
+                                </picture>
+                            </div>
+                            <div class="calc-btn__text">Калькулятор
+                                <br>шнурки</div>
+                        </div>
+                        <div class="header__calc-btn calc-btn js-modal" data-modal="#badges">
+                            <div class="calc-btn__icon">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/calculator-icon.webp">
+                                        <img src="/app/img/calculator-icon.png" />
+                                </picture>
+                            </div>
+                            <div class="calc-btn__text">Калькулятор
+                                <br>бейджи</div>
+                        </div>
+                    </div>
+                    <div class="header__contact"><a class="header__tel" href="tel:+74951662424">+7 495 166 24 24</a><a class="header__email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__top-layer"></div>
+            <div class="main__wrap wrap">
+                <header class="header">
+                    <div class="header__row flex flex_justify flex_vertical">
+                        <a class="header__logo" href="/main.html">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/logo.webp">
+                                    <img src="/app/img/logo.png" />
+                            </picture>
+                        </a>
+                        <div class="header__center flex flex_vertical">
+                            <div class="header__calc-btn calc-btn js-modal" data-modal="#shnurok">
+                                <div class="calc-btn__icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/calculator-icon.webp">
+                                            <img src="/app/img/calculator-icon.png" />
+                                    </picture>
+                                </div>
+                                <div class="calc-btn__text">Калькулятор
+                                    <br>шнурки</div>
+                            </div>
+                            <div class="header__calc-btn calc-btn js-modal" data-modal="#badges">
+                                <div class="calc-btn__icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/calculator-icon.webp">
+                                            <img src="/app/img/calculator-icon.png" />
+                                    </picture>
+                                </div>
+                                <div class="calc-btn__text">Калькулятор
+                                    <br>бейджи</div>
+                            </div>
+                        </div>
+                        <div class="header__contact"><a class="header__tel" href="tel:+74951662424">+7 495 166 24 24</a><a class="header__email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                        </div>
+                    </div>
+                </header>
+                <picture>
+                    <source type="image/webp" srcset="/app/img/main__badges.webp">
+                        <img src="/app/img/main__badges.png" class="main__badges" alt="" role="presentation" />
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="/app/img/main__badge_blur.webp">
+                        <img src="/app/img/main__badge_blur.png" class="main__badge-blur" alt="" role="presentation" />
+                </picture>
+                <div class="main__form-bg">
+                    <form class="main__form" action="/app/mail">
+                        <div class="main__form-title p">Заказать обратный звонок</div>
+                        <input class="main__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                        <button class="main__form-btn btn btn_orange btn" type="submit" name="recall">
+                            <div class="btn__icon-call">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/icon-call.webp">
+                                        <img src="/app/img/icon-call.png" />
+                                </picture>
+                            </div>
+                            <div class="btn__text">Заказать звонок</div>
+                        </button>
+                    </form>
+                </div>
+                <div class="main__content">
+                    <div class="main__desc">Качество по&nbsp;разумной цене!</div>
+                    <h1 class="main__title h1">Шнурки от&nbsp;18 руб./шт.<br>бейджи от&nbsp;7 руб./шт.</h1>
+                    <div class="main__desc">С логотипом под&nbsp;заказ и&nbsp;со склада по&nbsp;ценам
+                        <br>от&nbsp;производителя в&nbsp;срок от&nbsp;1 дня.
+                        <br>Производим от&nbsp;1 штуки, бесплатно доставим
+                        <br>при&nbsp;заказе от&nbsp;5 тыс. руб</div>
+                    <div class="main__content-bottom"><a class="main__btn btn btn_violet btn js-modal" href="#recall" data-subj="Запрос на&nbsp;макет"><span class="btn__text">запрос на&nbsp;макет</span></a>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/main__arrow.webp">
+                                <img src="/app/img/main__arrow.png" class="main__arrow" alt="" role="presentation" />
+                        </picture>
+                        <div class="main__text-btn">Бесплатный макет от&nbsp;дизайнера
+                            <br>за&nbsp;30 минут на&nbsp;ваше изделие
+                            <br>по&nbsp;запросу</div>
+                    </div>
+                </div>
+                <div class="main__calc-wrap">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/main__calc.webp">
+                            <img src="/app/img/main__calc.png" class="main__img-calc" alt="" role="presentation" />
+                    </picture>
+                    <div class="main__calc calc calc"></div>
+                </div>
+                <div class="main__discount discount">
+                    <div class="discount__cube1"></div>
+                    <div class="discount__cube2"></div>
+                    <div class="discount__wrap align-center">
+                        <h2 class="discount__title h2">Скидки предоставляются <br>от&nbsp;объема заказа!</h2><a class="discount__btn btn btn_violet btn js-modal" href="#recall"><span class="btn__icon-calc"><picture>
+                            <source type="image/webp" srcset="/app/img/calc-icon-white.webp">
+                            <img src="/app/img/calc-icon-white.png"  />
+                        </picture></span><span class="btn__text">Рассчитать скидку <br>от&nbsp;объема</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="category__wra wrap">
+                <div class="category__slider js-slider owl-carousel slider">
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide1.webp">
+                                            <img src="/app/img/slide1.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide2.webp">
+                                            <img src="/app/img/slide2.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide3.webp">
+                                            <img src="/app/img/slide3.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide1.webp">
+                                            <img src="/app/img/slide1.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide2.webp">
+                                            <img src="/app/img/slide2.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">ШЕЛКОГРАФИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом шелкографии</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide3.webp">
+                                            <img src="/app/img/slide3.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__slider js-slider owl-carousel slider">
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide2.webp">
+                                            <img src="/app/img/slide2.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide1.webp">
+                                            <img src="/app/img/slide1.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide3.webp">
+                                            <img src="/app/img/slide3.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide2.webp">
+                                            <img src="/app/img/slide2.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide1.webp">
+                                            <img src="/app/img/slide1.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">СУБЛИМАЦИЯ</h2>
+                            <div class="slider__desc p24">Примеры изготовленных лент для&nbsp;бейджей
+                                <br>методом сублимации</div>
+                            <div class="slider__center">
+                                <div class="slider__preview">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/slide3.webp">
+                                            <img src="/app/img/slide3.png" />
+                                    </picture>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div><a class="slider__btn btn btn_orange btn_fill js-modal" href="#recall">узнать цену</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products" id="products">
+            <div class="products__wrap wrap">
+                <div class="align-center">
+                    <h2 class="products__title h2">Готовая продукция</h2>
+                    <div class="products__desc p24">Мы понимаем, что в&nbsp;бизнесе и&nbsp;в жизни, порой решения
+                        <br>принимаются спонтанно. Но мы готовы к&nbsp;этому, и&nbsp;рады вам
+                        <br>предложить готовую продукцию на&nbsp;складе.</div>
+                </div>
+                <div class="products__list flex flex_justify">
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product1.webp">
+                                    <img src="/app/img/product1.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;карабином</div>
+                        <div class="products__desc p">Шириной - 10 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;карабином, Шириной - 10 мм">заказать</a>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product2.webp">
+                                    <img src="/app/img/product2.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;карабином</div>
+                        <div class="products__desc p">Шириной - 15 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;карабином, Шириной - 15 мм">заказать</a>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product3.webp">
+                                    <img src="/app/img/product3.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;карабином</div>
+                        <div class="products__desc p">Шириной - 20 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;карабином, Шириной - 20 мм">заказать</a>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product4.webp">
+                                    <img src="/app/img/product4.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;клипсой</div>
+                        <div class="products__desc p">Шириной - 10 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;клипсой, Шириной - 10 мм">заказать</a>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product5.webp">
+                                    <img src="/app/img/product5.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;клипсой</div>
+                        <div class="products__desc p">Шириной - 15 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;клипсой, Шириной - 15 мм">заказать</a>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__preview">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product6.webp">
+                                    <img src="/app/img/product6.jpg" />
+                            </picture>
+                        </div>
+                        <div class="products__title p">Шнурки без&nbsp;нанесения с&nbsp;клипсой</div>
+                        <div class="products__desc p">Шириной - 20 мм</div><a class="products__btn btn js-modal" href="#recall" data-info="Шнурки без&nbsp;нанесения с&nbsp;клипсой, Шириной - 20 мм">заказать</a>
+                    </div>
+                </div>
+                <div class="products__sale">
+                    <div class="products__sale-head">
+                        <div class="products__sale-bg"></div>
+                        <h3 class="products__sale-title h4">Рекламным агенствам предоставляем выгодные условия сотрудничества</h3>
+                    </div>
+                    <div class="products__sale-bottom flex flex_center">
+                        <div class="btn-wrap"><a class="products__sale-btn btn btn_orange btn js-modal" href="#recall"><span class="btn__text">сотрудничать</span></a>
+                            <div class="btn-wrap__arrow">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/product__arrow.webp">
+                                        <img src="/app/img/product__arrow.png" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calc-badges">
+            <div class="calc-badges__wrap wrap">
+                <div class="calc-badges__calc-wrap">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/online__calc.webp">
+                            <img src="/app/img/online__calc.png" class="calc-badges__img-calc" alt="" role="presentation" />
+                    </picture>
+                    <div class="calc-badges__calc calc calc"></div>
+                </div>
+                <div class="calc-badges__discount discount">
+                    <div class="discount__cube1"></div>
+                    <div class="discount__cube2"></div>
+                    <div class="discount__wrap align-center">
+                        <h2 class="discount__title h2">Скидки предоставляются <br>от&nbsp;объема заказа!</h2><a class="discount__btn btn btn_orange btn js-modal" href="#product"><span class="btn__icon-calc"><picture>
+                            <source type="image/webp" srcset="/app/img/calc-icon-orange.webp">
+                            <img src="/app/img/calc-icon-orange.png"  />
+                        </picture></span><span class="btn__text">Рассчитать скидку <br>от&nbsp;объема</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holder" id="holder">
+            <div class="holder__wrap wrap">
+                <h2 class="holder__title align-center h2">Держатели для&nbsp;бейджей <br>всегда в&nbsp;наличии на&nbsp;нашем складе</h2>
+                <div class="holder__center flex flex_center">
+                    <div class="btn-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/holder__left.webp">
+                                <img src="/app/img/holder__left.png" class="holder__img-left" alt="" role="presentation" />
+                        </picture>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/holder__right.webp">
+                                <img src="/app/img/holder__right.png" class="holder__img-right" alt="" role="presentation" />
+                        </picture><a class="holder__btn btn btn_orange btn js-modal" href="#product"><span class="btn__icon-calc"><picture>
+                            <source type="image/webp" srcset="/app/img/calc-icon-orange.webp">
+                            <img src="/app/img/calc-icon-orange.png"  />
+                        </picture></span><span class="btn__text">Рассчитать</span></a>
+                        <div class="btn-wrap__arrow">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/product__arrow.webp">
+                                    <img src="/app/img/product__arrow.png" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-screen">
+            <div class="video-screen__wrap wrap">
+                <div class="video-screen__slider js-slider js-video-slider owl-carousel slider">
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__item">
+                            <h2 class="slider__title h2">Посмотрите наши видео</h2>
+                            <div class="slider__desc p24">Качество по&nbsp;разумной цене за&nbsp;счет собственного
+                                <br>производства и&nbsp;профессиональной команды!</div>
+                            <div class="slider__center">
+                                <div class="slider__video js-play" data-video="&lt;iframe src=&quot;https://www.youtube.com/embed/ql9R99IvTCM?autoplay=1&amp;amp;loop=1&amp;amp;&amp;amp;&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/video_preview.webp">
+                                            <img src="/app/img/video_preview.jpg" />
+                                    </picture>
+                                    <div class="slider__video-btn">
+                                        <div class="slider__video-icon"></div>
+                                        <div class="slider__video-text">Включить видео</div>
+                                    </div>
+                                    <div class="js-video"></div>
+                                </div>
+                                <div class="slider__arrow slider__arrow_prev js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                                <div class="slider__arrow slider__arrow_next js-remove-video">
+                                    <svg class="icon icon-select__arrow select__arrow" viewBox="0 0 24 15.28">
+                                        <use xlink:href="/app/icons/sprite.svg#select__arrow"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact__form">
+                <div class="contact__manager">
+                    <div class="contact__manager-foto">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/woman.webp">
+                                <img src="/app/img/woman.png" />
+                        </picture>
+                    </div>
+                    <div class="contact__manager-info">
+                        <div class="contact__manager-name h3">Волчанская
+                            <br>Валерия</div>
+                        <div class="contact__manager-work">Менеджер производства</div>
+                    </div>
+                </div>
+                <div class="contact__form-content">
+                    <h2 class="contact__form-title h2">Остались вопросы?</h2>
+                    <div class="contact__form-desc">Заполните форму и&nbsp;я свяжусь
+                        <br>с&nbsp;Вами в&nbsp;течение 3-х минут!</div><a class="contact__form-tel" href="tel:+74951662424">+7 495 166 24 24</a>
+                    <div class="contact__form-bottom flex">
+                        <div class="btn-wrap"><a class="contact__form-btn btn btn_orange btn_fill btn js-modal" href="#recall"><span class="btn__text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span></a>
+                            <div class="btn-wrap__arrow">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/product__arrow.webp">
+                                        <img src="/app/img/product__arrow.png" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__wrap wrap">
+                <div class="contact__bottom">
+                    <h2 class="contact__bottom-title h2">Приезжайте к&nbsp;нам в&nbsp;гости! <br>Будем рады показать и&nbsp;рассказать <br>о&nbsp;нашей компании лично!</h2>
+                    <div class="contact__bottom-list">
+                        <div class="contact__bottom-item contact__bottom-item_tel">
+                            <div class="contact__icon-tel">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/phone.webp">
+                                        <img src="/app/img/phone.png" />
+                                </picture>
+                            </div><a class="contact__bottom-tel" href="tel:+74951662424">+7 495 166 24 24</a>
+                        </div>
+                        <div class="contact__bottom-item contact__bottom-item_email">
+                            <div class="contact__icon-email">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/email.webp">
+                                        <img src="/app/img/email.png" />
+                                </picture>
+                            </div><a class="contact__bottom-email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                        </div>
+                        <div class="contact__bottom-item contact__bottom-item_adress">
+                            <div class="contact__icon-adress">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/adress.webp">
+                                        <img src="/app/img/adress.png" />
+                                </picture>
+                            </div>
+                            <div class="contact__adress-title">Наш адрес:</div>
+                            <div class="contact__adress-text">г. Москва, ст. м. Таганская кольцевая
+                                <br>или&nbsp;Марксистская, ул. Александра Солженицына
+                                <br>(Большая Коммунистическая), д. 11, стр.3</div>
+                            <div class="contact__company-info">ООО «Промошнурок»
+                                <br>ИНН 7840043235, КПП 784001001
+                                <br>Расчетный счет: р/сч 40702810600024847309
+                                <br>в&nbsp;Петербургском филиале АО Юникредит банке г. Санкт-Петербурга
+                                <br>к/30101810800000000858, БИК 044030858</div>
+                        </div>
+                    </div>
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/contact__img.webp">
+                            <img src="/app/img/contact__img.png" class="contact__bottom-img" alt="" role="presentation" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__wra wrap">
+                <div class="footer__row flex flex_justify flex_vertical">
+                    <a class="footer__logo" href="main.html">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/logo.webp">
+                                <img src="/app/img/logo.png" />
+                        </picture>
+                    </a>
+                    <div class="footer__nav flex"><a class="footer__link js-modal" href="#shnurok"> Калькулятор <br>шнурки</a><a class="footer__link js-scroll-to" href="#products"> Готовая <br>продукция</a><a class="footer__link js-modal" href="#badges"> Калькулятор <br>бейджи</a>
+                        <a
+                        class="footer__link js-scroll-to" href="#holder">Держатели
+                            <br>для&nbsp;бейджей</a>
+                    </div>
+                    <div class="footer__contact"><a class="footer__tel" href="tel:+74951662424">+7 495 166 24 24</a><a class="footer__email" href="mailto:sales@promoshnurok.ru">sales@promoshnurok.ru</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modals-form modals mfp-hide" id="recall">
+            <div class="modals-form__logo">
+                <picture>
+                    <source type="image/webp" srcset="/app/img/logo_orange.webp">
+                        <img src="/app/img/logo_orange.png" />
+                </picture>
+            </div>
+            <div class="modals-form__desc">Качество по&nbsp;разумной цене!</div>
+            <h3 class="modals-form__title h3">ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА <br>И МЫ СВЯЖЕМСЯ С ВАМИ ЧЕРЕЗ 3 МИНУТЫ</h3>
+            <form class="modals-form__form" action="app/mail">
+                <input type="hidden" name="subj">
+                <label class="modals-form__label">Номер телефона</label>
+                <div class="modals-form__field">
+                    <input class="modals-form__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+                </div>
+                <div class="modals-form__btn-wrap btn-wrap">
+                    <button class="modals-form__btn btn btn_orange btn_fill" type="submit" name="send">отправить</button>
+                    <div class="btn-wrap__arrow">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/product__arrow.webp">
+                                <img src="/app/img/product__arrow.png" />
+                        </picture>
+                    </div>
+                </div>
+            </form>
+            <div class="modals-form__cube modals-form__cube_left"></div>
+            <div class="modals-form__cube modals-form__cube_right"></div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1582265299972"></script>
+</body>
+
+</html>

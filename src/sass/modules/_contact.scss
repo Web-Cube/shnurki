@@ -1,0 +1,242 @@
+.contact {
+	margin-top: 365rem;
+	padding-top: 1px;
+	background: #f06808;
+	color: #fff;
+	&__form {
+		position: relative;
+		max-width: 1310rem;
+		margin: -340rem auto 0 auto;
+		padding: 170rem 0 115rem 0;
+		border-radius: 20px;
+		background: #fff;
+		box-shadow: 0px 50px 35px 0px rgba(127, 144, 147, 0.2);
+		&-content {
+			color: #171717;
+			margin-left: 634/1310*100%;
+		}
+		&-desc {
+			margin-top: 25rem;
+			font-size: 32rem;
+			@include letter-spacing(32,-25);
+			font-weight: 500;
+		}
+		&-tel {
+			display: inline-flex;
+			margin-top: 40rem;
+			font-size: 70rem;
+			font-family: 'Heading Pro';
+			font-weight: bold;
+			line-height: 1;
+			color: #171717;
+			border-bottom: 4rem solid #171717;
+		}
+		&-btn {
+			width: 100%;
+			width: 375rem;
+			height: 109rem;
+			border-radius: 55px;
+		}
+		&-bottom {
+			margin-top: 40rem;
+		}
+	}
+	&__manager {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 634/1310*100%;
+		&-foto {
+			width: 923/634*100%;
+			margin-left: -210/634*100%;
+		}
+		&-info {
+			position: absolute;
+			left: 137/634*100%;
+			bottom: 230rem;
+			color: #fff;
+		}
+		&-work {
+			margin-top: 10rem;
+			font-size: 18rem;
+			font-weight: 500;
+		}
+	}
+	&__bottom {
+		position: relative;
+		padding: 120rem 0 90rem 70rem;
+		&-item {
+			position: relative;
+			&_tel {
+				margin-top: 45rem;
+			}
+			&_email {
+				margin-top: 12rem;
+			}
+			&_adress {
+				margin-top: 35rem;
+			}
+		}
+		&-tel {
+			display: inline-flex;
+			font-size: 42rem;
+			font-weight: 500;
+			color: #fff;
+			line-height: 1;
+			border-bottom: 2px solid #fff;
+			@include letter-spacing(42,-25);
+		}
+		&-email {
+			display: inline-flex;
+			font-size: 42rem;
+			font-weight: 500;
+			color: #fff;
+			line-height: 1;
+			@include letter-spacing(42,-25);
+		}
+		&-img {
+			position: absolute;
+			bottom: 0;
+			right: -320rem;
+			width: 799rem;
+			pointer-events: none;
+		}
+	}
+	&__icon-adress {
+		position: absolute;
+		left: -53rem;
+		top: 0;
+		width: 32rem;
+	}
+	&__icon-email {
+		position: absolute;
+		left: -55rem;
+		top: 12rem;
+		width: 36rem;
+	}
+	&__icon-tel {
+		position: absolute;
+		left: -58rem;
+		top: 5rem;
+		width: 41rem;
+	}
+	&__adress-title {
+		font-size: 26rem;
+		font-weight: bold;
+		@include letter-spacing(26,-25);
+	}
+	&__adress-text {
+		margin-top: 10rem;
+		font-size: 22rem;
+		font-weight: 500;
+		@include letter-spacing(22,-25);
+	}
+	&__company-info {
+		margin-top: 40rem;
+		font-size: 18rem;
+		@include letter-spacing(18,-25);
+	}
+}
+
+@media screen and (max-width:1380px) {
+	.contact {
+		margin-top: 480rem;
+		&__form {
+			max-width: 1170px;
+		}
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.contact {
+		&__form {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.contact {
+		margin-top: 440rem;
+		&__form {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			&-content {
+				margin-left: 0;
+				text-align: center;
+			}
+			&-bottom {
+				justify-content: center;
+			}
+		}
+		&__manager {
+			display: none;
+		}
+		&__bottom {
+			padding-left: 0;
+			&-img {
+				display: none;
+			}
+		}
+		&__icon-tel, &__icon-email, &__icon-adress {
+			display: none;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.contact {
+		margin-top: 350rem;
+		&__form {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&-desc {
+				font-size: 20rem;
+				margin-top: 15px;
+			}
+			&-tel {
+				font-size: 36rem;
+			}
+			&-btn {
+				height: 87rem;
+				width: 100%;
+				max-width: none;
+				font-size: 14px;
+			}
+			.btn-wrap {
+				width: 100%;
+			}
+		}
+		&__bottom {
+			padding: 60px 0 60px 0;
+			&-title {
+				font-size: 35rem;
+				br {
+					display: none;
+				}
+			}
+			&-item_tel {
+				margin-top: 30px;
+			}
+			&-tel, &-email {
+				font-size: 28rem;
+			}
+			&-img {
+				display: none;
+			}
+		}
+		&__adress-text {
+			font-size: 18rem;
+			br {
+				display: none;
+			}
+		}
+		&__company-info {
+			font-size: 16rem;
+			margin-top: 20px;
+		}
+	}
+}

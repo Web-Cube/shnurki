@@ -1,0 +1,125 @@
+.products {
+	padding-top: 45rem;
+	padding-bottom: 88rem;
+	&__list {
+		padding-top: 25rem;
+		max-width: 970rem;
+		margin: 0 auto;
+	}
+	&__item {
+		margin-top: 30rem;
+		width: 300/970*100%;
+		padding-bottom: 34rem;
+		background: #fff;
+		border-radius: 15px;
+		text-align: center;
+		font-weight: 500;
+	}
+	&__preview {
+		position: relative;
+		height: 210rem;
+		margin-bottom: 5rem;
+		border-radius: 15px 15px 0 0;
+		overflow: hidden;
+		img {
+			position: absolute;
+			max-height: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__desc {
+		margin-top: 15rem;
+	}
+	&__btn {
+		width: 100%;
+		max-width: 190rem;
+		height: 55rem;
+		margin-top: 27rem;
+		font-size: 16rem;
+		color: #b6b6b6;
+		border: 1px solid #b6b6b6;
+		&:hover {
+			background: $orange;
+			background-image: linear-gradient( 90deg, rgb(255,132,0) 0%, rgb(255,150,15) 100%);
+			box-shadow: 0px 30px 62px 0px rgba(147, 79, 3, 0.26);
+			border: 0;
+			color: #fff;
+		}
+	}
+	&__sale {
+		margin-top: 53rem;
+		&-head {
+			position: relative;
+			height: 150rem;
+			padding-top: 57rem;
+			color: #fff;
+		}
+		&-bg {
+			position: absolute;
+			left: -303rem;
+			top: 0;
+			width: 1850rem;
+			height: 237rem;
+			background: url(/img/highlights.png) 0 0 no-repeat;
+			background-size: auto 100%;
+		}
+		&-title {
+			position: relative;
+		}
+		&-bottom {
+			margin-top: 90rem;
+		}
+		&-btn {
+			width: 300rem;
+			.btn__line {
+				height: 3px;
+				left: 25%;
+			}
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.products {
+		&__sale {
+			margin-top: 60px;
+			&-head {
+				height: auto;
+				padding-top: 0;
+				text-align: center;
+				color: #171717;
+			}
+			&-bg {
+				display: none;
+			}
+			&-bottom {
+				margin-top: 35px;
+			}
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.products {
+		padding-top: 20px;
+		&__desc {
+			br {
+				display: none;
+			}
+		}
+		&__list {
+			padding-top: 10px;
+		}
+		&__item {
+			width: 100%;
+		}
+		&__btn {
+			background: $orange;
+			background-image: linear-gradient( 90deg, rgb(255,132,0) 0%, rgb(255,150,15) 100%);
+			box-shadow: 0px 30px 62px 0px rgba(147, 79, 3, 0.26);
+			border: 0;
+			color: #fff;
+		}
+	}
+}

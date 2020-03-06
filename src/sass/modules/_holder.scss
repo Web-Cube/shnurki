@@ -1,0 +1,43 @@
+.holder {
+	padding: 150rem 0 160rem 0;
+	&__center {
+		margin-top: 55rem;
+	}
+	&__btn {
+		justify-content: flex-start;
+		width: 330rem;
+		padding-left: 45rem;
+		.btn__icon-calc {
+			margin-right: 25rem;
+		}
+	}
+	&__img-left, &__img-right {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-40%);
+		max-width: none;
+		pointer-events: none;
+	}
+	&__img-left {
+		right: 100%;
+		width: 574rem;
+		margin-right: 43rem;
+	}
+	&__img-right {
+		left: 100%;
+		width: 505rem;
+		margin-left: 99rem;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.holder {
+		padding: 50px 0 50px 0;
+		&__img-left, &__img-right {
+			display: none;
+		}
+		&__center {
+			margin-top: 35px;
+		}
+	}
+}

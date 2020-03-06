@@ -1,0 +1,97 @@
+.header {
+	position: relative;
+	z-index: 10;
+	padding-top: 20rem;
+	color: #fff;
+	&__logo {
+		width: 212rem;
+	}
+	&__calc-btn {
+		&:not(:last-child) {
+			margin-right: 54rem;
+		}
+	}
+	&__center {
+		&-text {
+			font-size: 26rem;
+			font-weight: 500;
+		}
+	}
+	&__contact {
+		display: flex;
+		flex-direction: column;
+	}
+	&__tel {
+		font-size: 30rem;
+		font-weight: 600;
+		text-decoration: underline;
+		color: #fff;
+	}
+	&__email {
+		margin-top: 3rem;
+		font-size: 23rem;
+		font-weight: 500;
+		color: #fff;
+	}
+	&_fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 150;
+		width: 100%;
+		padding: 15px 0 20rem 0;
+		background: $violet;
+		opacity: 0;
+		transform: translateY(-100%);
+		visibility: hidden;
+		transition-duration: 0.2s;
+		&.is-active {
+			opacity: 1;
+			transform: translateY(0);
+			visibility: visible;
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.header {
+		&__logo {
+			width: 170rem;
+		}
+		&__calc-btn {
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+		&__tel {
+			font-size: 22rem;
+		}
+		&__email {
+			font-size: 18rem;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.header {
+		&_fixed {
+			display: none;
+		}
+		&__row {
+			justify-content: center;
+		}
+		&__logo, &__center {
+			margin-bottom: 20px;
+		}
+		&__contact {
+			justify-content: center;
+			text-align: center;
+		}
+		&__center {
+			&-text {
+				text-align: center;
+				font-size: 18px;
+			}
+		}
+	}
+}

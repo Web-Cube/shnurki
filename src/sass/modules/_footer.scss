@@ -1,0 +1,59 @@
+.footer {
+	background: $violet;
+	padding: 65rem 0 65rem 0;
+	color: #fff;
+	&__logo {
+		width: 212rem;
+		margin-bottom: 15rem;
+	}
+	&__nav {
+		width: 40%;
+	}
+	&__link {
+		width: 50%;
+		margin-bottom: 10rem;
+		font-size: 18rem;
+		font-weight: 500;
+		color: #fff;
+		text-decoration: underline;
+		br {
+			display: none;
+		}
+	}
+	&__contact {
+		display: flex;
+		flex-direction: column;
+	}
+	&__tel {
+		font-size: 24rem;
+		font-weight: 500;
+		text-decoration: underline;
+		color: #fff;
+	}
+	&__email {
+		margin-top: 3rem;
+		font-size: 23rem;
+		font-weight: 500;
+		color: #fff;
+	}
+}
+
+@include max-screen($large_mobile) {
+	.footer {
+		padding: 35px 0 35px 0;
+		&__nav {
+			width: 100%;
+			padding: 10px 0 15px 0;
+		}
+	}
+}
+
+@include max-screen($small_mobile) {
+	.footer {
+		&__link {
+			br {
+				display: block;
+			}
+		}
+	}
+}

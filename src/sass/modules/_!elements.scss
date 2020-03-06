@@ -1,0 +1,139 @@
+.btn {
+	position: relative;
+    display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 87rem;
+	font-size: 20rem;
+	font-family: 'Gilroy';
+	font-weight: 600;
+	color: #fff;
+	@include letter-spacing(20,30);
+	text-transform: uppercase;
+	overflow: hidden;
+	border: 0;
+	border-radius: 44px;
+	cursor: pointer;
+	&_orange {
+		background: $orange;
+		background-image: linear-gradient( 90deg, rgb(255,132,0) 0%, rgb(255,150,15) 100%);
+		box-shadow: 0px 30px 62px 0px rgba(147, 79, 3, 0.26);
+		&:hover {
+			color: rgb(255,132,0);
+			&.btn_fill {
+				border: 2px solid rgb(255,132,0);
+				background: #fff;
+			}
+		}
+	}
+	&__icon-call {
+		width: 50rem;
+		margin-right: 7rem;
+		position: relative;
+	}
+	&__icon-calc {
+		width: 41rem;
+		margin-right: 11rem;
+		position: relative;
+	}
+	&__text {
+		position: relative;
+	}
+	&__line {
+		position: absolute;
+		width: 100%;
+		height: 7rem;
+		transform: rotate(-60deg);
+		background: #fff;
+		transition-duration: 0.2s;
+	}
+	&:hover {
+		.btn__line {
+			height: 500%;
+		}
+	}
+	&_violet {
+		background: $violet;
+		background-image: linear-gradient( -31deg, rgb(102,0,148) 0%, rgb(128,54,163) 100%);
+		&:hover {
+			color: $violet;
+		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: -50%;
+		bottom: -50%;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
+		width: 45px;
+		transform: skewX(-22deg);
+		left: -65%;
+		animation-name: blick;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+}
+
+.calc-btn {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&__icon {
+		width: 49rem;
+		margin-right: 17rem;
+	}
+	&__text {
+		font-size: 20rem;
+		line-height: 28rem;
+		font-weight: 600;
+		@include letter-spacing(20,30);
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+}
+
+.btn-wrap {
+	position: relative;
+	&__arrow {
+		position: absolute;
+		left: 100%;
+		top: 10rem;
+		width: 84rem;
+	}
+}
+
+@include max-screen($small_tablet) {
+	.calc-btn {
+		&__icon {
+			width: 40rem;
+			margin-right: 15rem;
+		}
+		&__text {
+			font-size: 16rem;
+			line-height: 24rem;
+			@include letter-spacing(16,20);
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.btn-wrap {
+		&__arrow {
+			display: none;
+		}
+	}
+}
+
+@include max-screen($small_mobile) {
+	.calc-btn {
+		&__icon {
+			width: 35rem;
+			margin-right: 12rem;
+		}
+		&__text {
+			font-size: 15rem;
+			line-height: 23rem;
+			@include letter-spacing(15,15);
+		}
+	}
+}

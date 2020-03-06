@@ -1,0 +1,48 @@
+.discount {
+	position: relative;
+	padding: 155rem 0 120rem 0;
+	&__cube1 {
+		position: absolute;
+		left: -465rem;
+		top: -100rem;
+		width: 708rem;
+		height: 726rem;
+		background: url(/img/main__cube1.png) 0 0 no-repeat;
+		background-size: auto 100%;
+	}
+	&__cube2 {
+		position: absolute;
+		right: -440rem;
+		top: -100rem;
+		width: 691rem;
+		height: 726rem;
+		background: url(/img/main__cube2.png) 0 0 no-repeat;
+		background-size: auto 100%;
+	}
+	&__btn {
+		justify-content: flex-start;
+		width: 333rem;
+		height: 97rem;
+		margin-top: 50rem;
+		padding-left: 45rem;
+		font-size: 18rem;
+		text-align: left;
+	}
+}
+
+@include max-screen($small_tablet) {
+	.discount {
+		&__cube1, &__cube2 {
+			display: none;
+		}
+	}
+}
+
+@include max-screen($large_mobile) {
+	.discount {
+		padding: 40px 0 40px 0;
+		&__btn {
+			margin-top: 30px;
+		}
+	}
+}
